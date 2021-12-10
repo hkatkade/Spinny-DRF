@@ -13,12 +13,12 @@ The API service consist of 4 URLs: <br>
    contains 3 parameters : length,widh and height
 
 2. To edit/update the boxes\
-   http://localhost:8000/edit/<id>  <br>
+   http://localhost:8000/edit/id  <br>
    Here, ID is the id of box of you want to update\
    Example : http://localhost:8000/edit/21    
 
 3. To delete the box\
-   http://localhost:8000/delete/<id> <br>
+   http://localhost:8000/delete/id <br>
    Here, ID is the id of box of you want to delete <br> 
    Example : http://localhost:8000/delete/21  <br>
   
