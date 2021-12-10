@@ -69,8 +69,6 @@ class ShowBoxSerializer(serializers.ModelSerializer):
 class ShowMyBoxesSerializer(serializers.ModelSerializer):
     class Meta:
         model=Box
-        # fields=['id','area','volume','length','width','height','created_on',
-        #         'last_modified_on','last_modified_by','user']
         fields=['id','area','volume','length','width','height','created_on',
                 'last_modified_on','user','last_modified_by',]
         
@@ -94,7 +92,6 @@ class EditBoxSerializer(serializers.ModelSerializer):
 class DeleteBoxSerializer(serializers.ModelSerializer):
     class Meta:
         model=Box
-        # fields=['id','user','length','width','height','created_on','last_modified_on']
         fields=['id','area','volume','length','width','height','created_on',
                 'last_modified_on','user','last_modified_by']
     
@@ -103,8 +100,6 @@ class AddBoxSerializer(serializers.ModelSerializer):
     class Meta:
         model=Box
         fields=['id','length','width','height','created_on','last_modified_on']
-        # fields=['id','area','volume','length','width','height','created_on',
-        #         'last_modified_on','user','last_modified_by']
         
     def create(self, validated_data):
         if Week_validator(validated_data,-1):

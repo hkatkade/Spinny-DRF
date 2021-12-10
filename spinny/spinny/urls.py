@@ -19,8 +19,8 @@ from store.views import AddBox,ShowBox,EditBox,ShowMyBoxes,DeleteBox
 
 urlpatterns = [
     path('add',AddBox.as_view()),
-    path('listAll',ShowBox.as_view()),
-    path('listMyBoxes',ShowMyBoxes.as_view()),
+    path('listAll/',ShowBox.as_view()),
+    path('listMyBoxes/',ShowMyBoxes.as_view()),
     path('edit/<int:pk>',EditBox.as_view()),
     path('delete/<int:pk>',DeleteBox.as_view()),
     path('admin/', admin.site.urls),
