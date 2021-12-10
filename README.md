@@ -1,4 +1,6 @@
 # Spinny-DRF
+git clone https://github.com/hkatkade/Spinny-DRF.git
+
 python manage.py makemigrations\
 python manage.py migrate \
 python manage.py createsuperuser <br>
